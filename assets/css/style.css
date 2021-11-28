@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box1 {
+  background: rgba(182, 0, 182, 0.74);
+}
+
+.box2 {
+  background: rgb(255, 207, 135);
+}
+
+.box3 {
+  background: rgb(0, 175, 0);
+}
+
+.box4 {
+  background: rgb(255, 22, 22);
+}
+
+.box5 {
+  background: rgb(236, 236, 0);
+}
+
+.box6 {
+  background: rgb(250, 214, 13);
+}
+
+.box7 {
+  background: brown;
+}
+
+.box8 {
+  background: rgb(83, 83, 83);
+}
+
+.box9 {
+  background: magenta;
+}
+
+.box10 {
+  background: purple;
+}
+
+.box {
+  font-size: 100px;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  padding: 7px;
+  color: #fff;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Flex */
+
+.container {
+  border: 10px solid burlywood;
+
+  display: flex;
+  /* Width will be 100vw, overflowed items will show beyond 100vw*/
+
+  /* display: inline-flex; */
+  /* Width will cover all flex items, even if it overflows the viewport. If items are within the viewport, the container width will be equal to the total width of the flex items*/
+
+  min-height: 100vh;
+  flex-direction: row-reverse;
+  /* To display all flex items in a row / col. Default value is row.
+  
+  When fd is row, main axis spans horizontally across the screen, i.e from left to right. When fd is column, main axis is spans vertically across the screen, i.e, from top to bottom.
+  
+  The cross axis is just the opposite of main axis.
+  
+  row-reverse : The main axis starts from right and goes to the left. Overflowed items to the left side of the screen are not shown, i.e. Horizontal scrollbar is absent.
+  
+  column-reverse : The main axis starts from bottom and goes to the top. Overflowed items to the top are shown. Vertical scrollbar is present*/
+}
